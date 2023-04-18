@@ -12,27 +12,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
 
-  
-
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/style.css">
+
+  <script defer src="scripts/main.js"></script>
 </head>
 <body>
   <div class="page-wrapper">
     <header>
       <a class="link-home" href="#">sunnyside</a>
-      <nav>
+      <nav id="header-nav" class="hidden-mobile">
         <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Project</a>
         <a href="#">Contact</a>
       </nav>
-      <div class="hamburger visible-mobile"></div>
+      <div id="header-menu-toggle" class="hamburger hidden-desktop"></div>
     </header>
 
     <main>
       <section class="hero">
-        We are creatives
+        <h1>We are creatives</h1>
+        <div class="image-arrow"></div>
       </section>
 
       <section class="services">

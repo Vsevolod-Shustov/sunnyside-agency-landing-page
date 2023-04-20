@@ -156,6 +156,39 @@ nav a:hover {
     color: var(--dark-des-cyan);
 }
 
+.testimonials {
+    padding: 75px 30px 80px;
+}
+.testimonials h3 {
+    color:var(--grayish-blue);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.testimonial {
+    text-align: center;
+    margin:65px auto;
+}
+.testimonial img {
+    border-radius: 50%;
+    width:70px;
+    margin-bottom:1.75rem;
+}
+.testimonial p {
+    line-height:1.8;
+    color:var(--dark-grayish-blue);
+    margin-bottom:2.25rem;
+}
+.testimonial .name {
+    color: black;
+    font-family: "Fraunces", serif;
+    font-weight:900;
+    margin-bottom:1rem;
+}
+.testimonial .occupation {
+    color:var(--grayish-blue);
+    font-size:14px;
+}
+
 
 @media screen and (max-width:1600px) {
     .hidden-mobile {

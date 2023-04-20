@@ -143,6 +143,20 @@ nav a:hover {
     background-color: var(--soft-red);
 }
 
+.services h2 {
+    font-size: 1.75rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+}
+.services p {
+    text-align: center;
+    line-height:1.5;
+}
+.text-graphic-design {
+    color: var(--dark-des-cyan);
+}
+
+
 @media screen and (max-width:1600px) {
     .hidden-mobile {
         display: none;
@@ -163,6 +177,18 @@ nav a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .text-graphic-design {
+        min-height:600px;
+        background: url("../images/mobile/image-graphic-design.jpg") top center / cover;
+        padding: 400px 20px 20px;
+    }
+
+    .text-photography {
+        min-height:600px;
+        background: url("../images/mobile/image-photography.jpg") top center / cover;
+        padding: 400px 20px 20px;
     }
 }
 

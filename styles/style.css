@@ -49,26 +49,26 @@ header {
     justify-content: space-between;
 }
 
-.link-home {
+header .link-home {
     color:white;
     text-decoration:none;
     font-size:1.5rem;
     letter-spacing: 2px;
 }
 
-nav a {
+header nav a {
     color:var(--grayish-blue);
     padding: 1rem 2rem;
     text-decoration:none;
     text-align: center;
 }
-nav a:hover {
+header nav a:hover {
     color:var(--dark-grayish-blue);
     background-color: var(--yellow);
     border-radius: 1.5rem;
 }
 
-.hamburger {
+header .hamburger {
     cursor: pointer;
     width:24px;
     height:24px;
@@ -194,13 +194,41 @@ nav a:hover {
     grid-template-columns: repeat(2, 1fr);
 }
 
+footer {
+    background-color: hsl(167,32%,83%);
+    color:var(--dark-mod-cyan);
+    text-align: center;
+    padding:60px 0 65px;
+}
+footer a {
+    color:inherit;
+    text-decoration: none;
+}
+footer .link-home {
+    font-size: 2rem;
+    
+    letter-spacing: 1px;
+}
+footer nav {
+    margin:50px auto 95px;
+    display: flex;
+    justify-content: space-around;
+}
+footer .links-social {
+    display: flex;
+    justify-content:center;
+}
+footer .links-social a {
+    display: inline-block;
+    margin:0 1rem;
+}
 
 @media screen and (max-width:1600px) {
     .hidden-mobile {
         display: none;
     }
 
-    nav {
+    header nav {
         position:absolute;
         top:105px;
         right:25px;
@@ -245,17 +273,17 @@ nav a:hover {
         padding:2.5rem;
     }
 
-    .link-home {
+    header .link-home {
         font-size: 2rem;
     }
 
-    nav a {
+    header nav a {
         color:white;
         padding: 1.25rem 2rem;
         text-decoration:none;
         line-height:2rem;
     }
-    nav a:hover {
+    header nav a:hover {
         color:black;
         background-color: white;
         border-radius: 1.5rem;

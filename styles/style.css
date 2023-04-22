@@ -270,11 +270,12 @@ footer .links-social a {
     }
 
     header {
-        padding:2.5rem;
+        padding:3rem 2.5rem;
     }
 
     header .link-home {
         font-size: 2rem;
+        letter-spacing: 3px;
     }
 
     header nav a {
@@ -286,13 +287,123 @@ footer .links-social a {
     header nav a:hover {
         color:black;
         background-color: white;
-        border-radius: 1.5rem;
+        border-radius: 2rem;
     }
-
-
 
     .hero {
         background: var(--light-blue) url("../images/desktop/image-header.jpg") center bottom / cover;
+        min-height: 670px;
+        padding-top:65px;
+    }
+    .hero h1 {
+        font-size:3.5rem;
+        line-height: 1.3;
+        letter-spacing:9px;
+        margin-bottom:90px;
+    }
+    .image-arrow {
+        background: url("../images/icon-arrow-down.svg") center center no-repeat;
+        height:114px;
+    }
 
+    .cta {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .text-transform {
+        order:-1;
+    }
+    .cta .text {
+        padding: 160px 100px 50px 165px;
+    }
+    .cta .text.text-stand-out{
+        padding: 160px 100px 50px 110px;
+    }
+    .cta .text * {
+        text-align: left;
+    }
+    .cta h2 {
+        font-size: 2.5rem;
+        line-height: 1.25;
+        margin-bottom: 2rem;
+    }
+    .cta p {
+        padding:0;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .text-graphic-design {
+        min-height:600px;
+        background: url("../images/desktop/image-graphic-design.jpg") top center / cover;
+        padding: 400px 20px 20px;
+    }
+    .text-photography {
+        min-height:600px;
+        background: url("../images/desktop/image-photography.jpg") top center / cover;
+        padding: 400px 20px 20px;
+    }
+    .services h2 {
+        font-size: 1.75rem;
+        line-height: 1.0;
+        margin-bottom: 1.8rem;
+    }
+    .services p {
+        text-align: center;
+        line-height:1.5;
+        padding:0 180px;
+    }
+
+    .testimonials {
+        padding: 160px 150px 165px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .testimonials h3 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        font-size:1.5rem;
+        color:var(--grayish-blue);
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+    .testimonial {
+        text-align: center;
+        margin:80px 20px 0;
+    }
+    .testimonial img {
+        border-radius: 50%;
+        width:70px;
+        margin-bottom:3.5rem;
+    }
+    .testimonial p {
+        line-height:1.8;
+        color:var(--dark-grayish-blue);
+        margin-bottom:4.5rem;
+    }
+    .testimonial .name {
+        color: black;
+        font-family: "Fraunces", serif;
+        font-weight:900;
+        margin-bottom:1rem;
+    }
+    .testimonial .occupation {
+        color:var(--grayish-blue);
+        font-size:14px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    footer nav {
+        justify-content: center;
+    }
+    footer nav a {
+        display:inline-block;
+        margin:0 30px;
     }
 }
